@@ -1,3 +1,7 @@
+#TODO: Explorer
+#TODO: Hardening
+#TODO: Optional Windows Updates
+
 # Start message
 Write-Output "[*] Configuring Windows 11..."
 
