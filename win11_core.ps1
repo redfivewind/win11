@@ -39,6 +39,7 @@ choco install 7zip ccleaner librewolf vlc vscodium --acceptlicence --confirm --i
 #Set-GPRegistryValue -Name "LocalMachine" -Key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\System" -ValueName "DisableCMD" -Type DWORD -Value 1
 
 Write-Output "[*] Installing Windows updates..."
+Install-PackageProvider -Name NuGet -Force
 Install-Module -Name PSWindowsUpdate -Force
 Update-WUModule
 Get-WUList -MicrosoftUpdate
