@@ -41,6 +41,5 @@ choco install 7zip ccleaner librewolf vlc vscodium --acceptlicence --confirm --i
 Write-Output "[*] Installing Windows updates..."
 Install-PackageProvider -Name NuGet -Force
 Install-Module -Name PSWindowsUpdate -Force
-Update-WUModule
 Get-WUList -MicrosoftUpdate
 Install-WindowsUpdate -AcceptAll -IgnoreReboot -MicrosoftUpdate
